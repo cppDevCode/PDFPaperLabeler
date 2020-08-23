@@ -1,0 +1,2 @@
+extern GtkLinkButton *linkImpresora;
+

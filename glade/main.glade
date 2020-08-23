@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkAdjustment" id="ajusteDesde">
+    <property name="lower">1</property>
+    <property name="upper">100</property>
+    <property name="value">1</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="ajusteHasta">
+    <property name="lower">1</property>
+    <property name="upper">100</property>
+    <property name="value">1</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkImage" id="imgPreferencias">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="stock">gtk-preferences</property>
+  </object>
+  <object class="GtkTextBuffer" id="txtBuffer">
+    <property name="text" translatable="yes">(C) 2019 - 2020 Alejandro Lucas Baldres - Distribuido bajo licencia GPL 3 o superior - DISTRIBUIDO SIN NINGUNA GARANTIA</property>
+  </object>
+  <object class="GtkWindow" id="main">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="has_focus">True</property>
+    <property name="title" translatable="yes">Etiq+ - Under GPL 3 o later</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="destroy_with_parent">True</property>
+    <signal name="destroy" handler="on_main_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkOverlay">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage" id="imghoja">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="hexpand">True</property>
+                <property name="pixbuf">hojas.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="lblNombre">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">35</property>
+                <property name="margin_top">64</property>
+                <property name="label" translatable="yes">Luciano
+6to A
+Hoja Nº 1</property>
+                <attributes>
+                  <attribute name="font-desc" value="Carlito 11"/>
+                  <attribute name="foreground" value="#000000000000"/>
+                </attributes>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="labColegio">
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin_left">115</property>
+                <property name="margin_top">29</property>
+                <property name="label" translatable="yes">Colegio "La Asunción"</property>
+                <attributes>
+                  <attribute name="font-desc" value="Carlito 10"/>
+                  <attribute name="foreground" value="#000000000000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="labNombColegio">
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin_left">115</property>
+                <property name="margin_top">40</property>
+                <property name="label" translatable="yes">Luciano
+6to A</property>
+                <attributes>
+                  <attribute name="font-desc" value="Carlito 14"/>
+                  <attribute name="foreground" value="#000000000000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">2</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="labMateria">
+                <property name="can_focus">False</property>
+                <property name="valign">start</property>
+                <property name="margin_top">36</property>
+                <attributes>
+                  <attribute name="font-desc" value="Carlito 14"/>
+                  <attribute name="foreground" value="#000000000000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">3</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="labHoja">
+                <property name="can_focus">False</property>
+                <property name="halign">end</property>
+                <property name="valign">start</property>
+                <property name="margin_right">148</property>
+                <property name="margin_top">38</property>
+                <property name="label" translatable="yes">1</property>
+                <attributes>
+                  <attribute name="font-desc" value="Carlito 10"/>
+                  <attribute name="foreground" value="#000000000000"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">4</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkImage" id="imgSello">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="valign">end</property>
+                <property name="xalign">0.029999999329447746</property>
+                <property name="yalign">1</property>
+                <property name="pixbuf">sello.png</property>
+              </object>
+              <packing>
+                <property name="index">5</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="gridTotal">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">end</property>
+                <property name="valign">center</property>
+                <property name="hexpand">True</property>
+                <property name="pixbuf">2000px-GPLv3_Logo.svg.png</property>
+              </object>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnImpresora">
+                <property name="label" translatable="yes">Seleccionar Impresora</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="image">imgPreferencias</property>
+                <property name="always_show_image">True</property>
+                <signal name="clicked" handler="on_btnImpresora_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Materia:</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="txtMateria">
+                <property name="width_request">244</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="max_length">26</property>
+                <signal name="changed" handler="on_cmbNombre_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Año y Curso:</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Nombre y Apellido:</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="txtAno">
+                <property name="width_request">136</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="halign">start</property>
+                <property name="max_length">5</property>
+                <property name="text" translatable="yes">1ro A</property>
+                <signal name="changed" handler="on_cmbNombre_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="cmbNombre">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">start</property>
+                <property name="margin_left">3</property>
+                <property name="active">0</property>
+                <items>
+                  <item id="luchi" translatable="yes">Luciano</item>
+                  <item id="delfi" translatable="yes">Delfina</item>
+                </items>
+                <signal name="changed" handler="on_cmbNombre_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Hasta:</property>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="spHasta">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">10</property>
+                <property name="input_purpose">number</property>
+                <property name="adjustment">ajusteHasta</property>
+                <property name="climb_rate">1</property>
+                <property name="numeric">True</property>
+                <property name="value">10</property>
+                <signal name="value-changed" handler="on_spHasta_value_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinButton" id="spDesde">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">1</property>
+                <property name="input_purpose">number</property>
+                <property name="adjustment">ajusteDesde</property>
+                <property name="climb_rate">1</property>
+                <property name="numeric">True</property>
+                <property name="value">1</property>
+                <signal name="value-changed" handler="on_cmbNombre_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="labEstado">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Desde:</property>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Impresora Seleccionada:</property>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLinkButton" id="linkImpresora">
+                <property name="label" translatable="yes">button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="halign">start</property>
+                <property name="relief">none</property>
+                <property name="uri">http://localhost:631/printers/EPSON_EPSON_L365_Series2</property>
+              </object>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">end</property>
+                <property name="label" translatable="yes">Tipo de Hoja:</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="cmbhoja">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="active">0</property>
+                <items>
+                  <item id="hoja3" translatable="yes">Hoja Nº 3</item>
+                  <item id="Obra" translatable="yes">Papel Avon (Cuaderno)</item>
+                </items>
+                <signal name="changed" handler="on_cmbhoja_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="labEColegio">
+                <property name="can_focus">False</property>
+                <property name="halign">end</property>
+                <property name="label" translatable="yes">Colegio:</property>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="txtColegio">
+                <property name="can_focus">True</property>
+                <property name="text" translatable="yes">Colegio "La Asuncion"</property>
+                <signal name="changed" handler="on_cmbNombre_changed" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">3</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="labMarca">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Marca de Hoja:</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="cmbMarca">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="active">0</property>
+                <items>
+                  <item id="rivadavia" translatable="yes">Rivadavia</item>
+                  <item id="Exito" translatable="yes">Exito</item>
+                </items>
+                <signal name="changed" handler="cmbMarca_changed_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Version: 0.97.5l</property>
+                <attributes>
+                  <attribute name="font-desc" value="Silent Reaction 12"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="left_attach">4</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButtonBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">577</property>
+            <property name="layout_style">center</property>
+            <child>
+              <object class="GtkButton" id="btnCancelar">
+                <property name="label" translatable="yes">Salir</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_main_destroy" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnImprimir">
+                <property name="label" translatable="yes">Imprimir</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btnImprimir_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="txtEstado">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hscroll_policy">natural</property>
+            <property name="vscroll_policy">natural</property>
+            <property name="editable">False</property>
+            <property name="justification">center</property>
+            <property name="cursor_visible">False</property>
+            <property name="buffer">txtBuffer</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
